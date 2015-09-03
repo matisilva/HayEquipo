@@ -1,7 +1,8 @@
 from django.contrib import admin
-from .models import Comidas
+from .models import Comida
 # Register your models here.
-class UserAdmin(admin.ModelAdmin):
+
+class ComidaAdmin(admin.ModelAdmin):
 	list_display = ('Nombre','Precio','Descripcion')
 
-admin.site.register(Comidas, UserAdmin)
+admin.site.register(Comida, ComidaAdmin)
