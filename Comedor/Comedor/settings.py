@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'Usuarios',
     'Comidas',
+    'Asistencias',
 )
 
 MIDDLEWARE_CLASSES = (

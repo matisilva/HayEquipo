@@ -11,8 +11,9 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.RenameModel(
-            old_name='Usuarios',
-            new_name='Usuario',
+        migrations.AlterField(
+            model_name='usuario',
+            name='Condicion',
+            field=models.CharField(default=b'ES', max_length=1, choices=[(b'ES', b'Estudiante'), (b'BE', b'Becado'), (b'DO', b'Docente')]),
         ),
     ]

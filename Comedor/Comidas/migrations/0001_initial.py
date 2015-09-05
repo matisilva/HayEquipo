@@ -11,12 +11,32 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Comidas',
+            name='Comida',
+            fields=[
+                ('C_id', models.AutoField(serialize=False, primary_key=True)),
+            ],
+        ),
+        migrations.CreateModel(
+            name='Guarnicion',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('Nombre', models.CharField(max_length=60)),
-                ('Precio', models.IntegerField()),
-                ('Descripcion', models.CharField(max_length=200)),
+                ('Descripcion', models.CharField(max_length=30)),
+                ('Ingredientes', models.CharField(max_length=50)),
+            ],
+        ),
+        migrations.CreateModel(
+            name='PlatoPrincipal',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('Descripcion', models.CharField(max_length=30)),
+                ('Ingredientes', models.CharField(max_length=50)),
+            ],
+        ),
+        migrations.CreateModel(
+            name='Postre',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('Descripcion', models.CharField(max_length=30)),
             ],
         ),
     ]
