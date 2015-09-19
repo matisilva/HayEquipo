@@ -5,6 +5,8 @@ from Comidas.models import Comida
 
 #Objetivo: definir asistencia a comer,
 class Asistencia(models.Model):
-    A_id = models.ForeignKey(Usuario)
+    A_usuario = models.ForeignKey(Usuario)
     A_menu = models.ForeignKey(Comida)
     A_fecha = models.DateTimeField(auto_now_add = True)
+    A_id = models.IntegerField()
+
