@@ -20,6 +20,7 @@ class Usuario(models.Model):
     Telefono = models.IntegerField()
     Nacimiento = models.DateField()
     Condicion = models.CharField(choices=CONDITION_CHOICES, max_length=20, default=ESTUDIANTE)
+    Saldo = models.IntegerField(default = 0)
 
     def __unicode__(self):
         return str(self.Nombre) + str(self.Apellido)
