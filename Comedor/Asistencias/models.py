@@ -8,5 +8,5 @@ class Asistencia(models.Model):
     A_usuario = models.ForeignKey(Usuario)
     A_menu = models.ForeignKey(Comida)
     A_fecha = models.DateTimeField(auto_now_add = True)
-    A_id = models.IntegerField()
+    A_id = models.AutoField(primary_key=True)
 
