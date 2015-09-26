@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #!/home/fer/HayEquipo/Comedor/env/bin/python2
+=======
+#!/home/matias/Documentos/HayEquipo/Comedor/env/bin/python
+>>>>>>> e4baf504ede925f4f1e07d823c9b20b3d0dbe14c
 
 # -*- coding: utf-8 -*-
 import re
