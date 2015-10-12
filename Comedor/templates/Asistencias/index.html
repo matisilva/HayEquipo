@@ -1,9 +1,12 @@
 {% if latest_asistencias %}
     <ul>
     {% for asistencia in latest_asistencias %}
-        <li><a href="/asistencias/{{ asistencia.A_id }}/">{{ asistencia.A_usuario}} {{asistencia.A_fecha}}</a></li>
+        <li><a href="{% url 'details' asistencia.A_id %}">{{ asistencia.A_usuario}} {{asistencia.A_fecha}}</a></li>
     {% endfor %}
     </ul>
 {% else %}
     <p>Nobody assist yet.</p>
 {% endif %}
+
+
+    <a href="{% url 'assist' %}">Cargar asistencias</a>
